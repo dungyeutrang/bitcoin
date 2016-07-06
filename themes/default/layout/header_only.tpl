@@ -10,6 +10,7 @@
 		<!-- END: links -->
 		<!-- BEGIN: js -->
 		<script<!-- BEGIN: ext --> src="{JS_SRC}"<!-- END: ext -->><!-- BEGIN: int -->{JS_CONTENT}<!-- END: int --></script>
-		<!-- END: js -->                
+		<!-- END: js -->    
+                <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 	</head>
 	<body>

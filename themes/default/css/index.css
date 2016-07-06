@@ -1,3 +1,6 @@
+.navbar{
+    margin: 0px !important;
+}
 .banner{
     height: 118px;
     background: #ececec;
@@ -42,4 +45,119 @@
 }
 .appstore{
     max-width: 145px !important;
+}
+.introduction{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: url('../images/background_introduction.jpg');
+}
+.header-introduction{
+    color: white;
+    font-size: 29px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.margin-20{
+    margin-top: 20px;
+}
+.embed-responsive.embed-responsive-16by9{
+    padding-bottom: 56.25%;
+}
+.embed-responsive{
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.slogan{
+    color: white;
+    font-size: 1.2em;
+}
+.color-white{
+    color:white;
+}
+.font-size-12em{
+    font-size: 1.2em;  
+}
+.color-green{
+    color:#37a33b;
+}
+.color-red{
+    color:#d9534f
+}
+.btn-buy-sell{
+    padding: 10px 12px !important;
+}
+.title-accent{
+    padding-top: 5px;
+}
+.title-accent>h3>span {
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.font-weight-normal{
+    font-weight: 100;
+}
+.margin-10{
+    margin-top: 10px
+}
+.national-user{
+    font-size: 12px;
+}
+.color-orange{
+    color:#f7931a;
+}
+.title-maximum{
+    font-size: 12px;
+}
+.margin-bottom-20{
+    margin-bottom: 20px;
+}
+.maximum-btc{
+    background: #f7931a;
+    padding: 4px;
+    border-radius: 10px;
+    margin-left: 5px;
+    color: white;
+    /* font-family: monospace; */
+    font-size: 13px;
+}
+.next-page-seller{
+    background: white !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    color: #9b59b6 !important;
+    border: 1px solid rgba(204, 204, 204, 0.29) !important;
+    border-left: none !important;
+}
+.prev-page-seller{
+    background: white !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border: 1px solid rgba(204, 204, 204, 0.29) !important;
+}
+.btn-buy{
+    /* margin: 10px; */
+    background: white !important;
+    border: 1px solid #ccc !important;
+    /* width: 83px; */
+    padding: 10px 15px !important;
+    font-weight: bold;
+}
+.margin-top-100{
+    margin-top: 100px;
+}
+.footer-extend{
+    border-top: 1px solid #191919;
+    background: #212121;
+    font-size: 11px;
+    color: #a3a3a3;
+    padding-top: 20px;
+    text-align: center;
+    height: 80px;
+}
+.border-none{
+    border:0px;
 }

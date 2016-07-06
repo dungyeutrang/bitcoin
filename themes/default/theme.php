@@ -68,7 +68,7 @@ function nv_site_theme($contents, $full = true) {
     //Links
     $html_links[] = array('rel' => 'StyleSheet', 'href' => NV_BASE_SITEURL . NV_ASSETS_DIR . '/css/font-awesome.min.css');
     $html_links[] = array('rel' => 'StyleSheet', 'href' => NV_BASE_SITEURL . 'themes/' . $global_config['module_theme'] . '/css/bootstrap.min.css');
-
+    $html_links[] = array('rel' => 'StyleSheet', 'href' => NV_BASE_SITEURL . 'themes/' . $global_config['module_theme'] . '/css/magic-check.min.css');
     $html_links[] = array('rel' => 'StyleSheet', 'href' => NV_BASE_SITEURL . 'themes/' . $global_config['module_theme'] . '/css/index.css');
 
     $html_links = array_merge_recursive($html_links, nv_html_links(false));

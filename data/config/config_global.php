@@ -5,15 +5,15 @@
  * @Author VINADES.,JSC (contact@vinades.vn)
  * @Copyright (C) 2016 VINADES.,JSC. All rights reserved
  * @License GNU/GPL version 2 or any later version
- * @Createdate Tue, 05 Jul 2016 10:23:38 GMT
+ * @Createdate Tue, 05 Jul 2016 15:25:11 GMT
  */
 
 if ( ! defined( 'NV_MAINFILE' ) ) die( 'Stop!!!' );
 
 $sys_info['disable_classes']=array();
-$sys_info['disable_functions']=array('pcntl_alarm','pcntl_fork','pcntl_waitpid','pcntl_wait','pcntl_wifexited','pcntl_wifstopped','pcntl_wifsignaled','pcntl_wexitstatus','pcntl_wtermsig','pcntl_wstopsig','pcntl_signal','pcntl_signal_dispatch','pcntl_get_last_error','pcntl_strerror','pcntl_sigprocmask','pcntl_sigwaitinfo','pcntl_sigtimedwait','pcntl_exec','pcntl_getpriority','pcntl_setpriority','');
+$sys_info['disable_functions']=array();
 $sys_info['ini_set_support']= true;
-$sys_info['supports_rewrite']=false;
+$sys_info['supports_rewrite']='rewrite_mode_apache';
 
 define('DIR_FORUM', '');
 define('NV_ALLOWED_HTML_TAGS', 'embed, object, param, a, b, blockquote, br, caption, col, colgroup, div, em, h1, h2, h3, h4, h5, h6, hr, i, img, li, p, span, strong, s, sub, sup, table, tbody, td, th, tr, u, ul, ol, iframe, figure, figcaption, video, audio, source, track, code, pre');
@@ -30,8 +30,8 @@ define('NV_UNICKMAX', 20);
 define('NV_UNICKMIN', 4);
 define('NV_UPASSMAX', 20);
 define('NV_UPASSMIN', 8);
-define('NV_EOL', "\n");
-define('NV_UPLOAD_MAX_FILESIZE', 8388608);
+define('NV_EOL', "\r\n");
+define('NV_UPLOAD_MAX_FILESIZE', 2097152);
 $global_config['admfirewall']=0;
 $global_config['admin_check_pass_time']=1800;
 $global_config['allow_sitelangs']=array('en');
@@ -50,7 +50,7 @@ $global_config['block_admin_ip']=0;
 $global_config['captcha_type']=1;
 $global_config['cdn_url']='';
 $global_config['cookie_httponly']=1;
-$global_config['cookie_prefix']='nv4c_f0G5d';
+$global_config['cookie_prefix']='nv4c_x2Gw2';
 $global_config['cookie_secure']=0;
 $global_config['display_errors_list']=32767;
 $global_config['dump_autobackup']=1;
@@ -69,7 +69,7 @@ $global_config['ftp_path']='/';
 $global_config['ftp_port']=21;
 $global_config['ftp_server']='localhost';
 $global_config['ftp_user_name']='';
-$global_config['ftp_user_pass']='vz2pl6ust0M-RFlUXmeEib89qZerrLdDPkRZVF5nhIk,';
+$global_config['ftp_user_pass']='PJNx0r-vb_JeZLT5UVgBcDyTcdK_r2_yXmS0-VFYAXA,';
 $global_config['gfx_chk']=3;
 $global_config['google_client_id']='';
 $global_config['google_client_secret']='';
@@ -85,7 +85,7 @@ $global_config['notification_active']=1;
 $global_config['notification_autodel']=15;
 $global_config['nv_auto_resize']=1;
 $global_config['nv_display_errors_list']=1;
-$global_config['nv_max_size']=8388608;
+$global_config['nv_max_size']=2097152;
 $global_config['nv_unick_type']=4;
 $global_config['nv_upass_type']=2;
 $global_config['openid_processing']=0;
@@ -96,7 +96,7 @@ $global_config['rewrite_endurl']='/';
 $global_config['rewrite_exturl']='.html';
 $global_config['rewrite_op_mod']='';
 $global_config['rewrite_optional']=0;
-$global_config['session_prefix']='nv4s_u1bHG5';
+$global_config['session_prefix']='nv4s_l36mrz';
 $global_config['site_keywords']='NukeViet, portal, mysql, php';
 $global_config['site_lang']='en';
 $global_config['site_phone']='';
@@ -112,7 +112,7 @@ $global_config['useactivate']=2;
 $global_config['user_check_pass_time']=1800;
 $global_config['version']='4.0.29';
 $global_config['whoviewuser']=2;
-$global_config['check_rewrite_file']='';
+$global_config['check_rewrite_file']=1;
 $global_config['allow_request_mods']=array('get','post','cookie','session','request','env','server');
 $global_config['request_default_mode']='request';
 $global_config['log_errors_list']=32767;
@@ -129,4 +129,4 @@ $nv_parse_ini_timezone=array('Pacific/Midway'=>array('winter_offset'=>'-39600', 
 $nv_plugin_area=array(1=>array(0=>'qrcode.php'));
 
 $rewrite_keys=array(0=>'#"(/)index.php\\?language=([a-z-]+)\\&[amp;]*nv=seek\\&[amp;]*q\\=([^"]+)"#', 1=>'#"(/)index.php\\?language=([a-z-]+)\\&[amp;]*nv=([a-zA-Z0-9-]+)\\&[amp;]*op=search\\&[amp;]*q\\=([^"]+)"#', 2=>'#"(/)index.php\\?language=([a-z-]+)\\&[amp;]*nv=([a-zA-Z0-9-]+)\\&[amp;]*op=tag/([^"]+)"#', 3=>'#"(/)index.php\\?language=([a-z-]+)\\&[amp;]*nv=([a-zA-Z0-9-]+)\\&[amp;]*op=([a-zA-Z0-9-/]+)\\.html"#', 4=>'#"(/)index.php\\?language=([a-z-]+)\\&[amp;]*nv=([a-zA-Z0-9-]+)\\&[amp;]*op=([a-zA-Z0-9-/]+)"#', 5=>'#"(/)index.php\\?language=([a-z-]+)\\&[amp;]*nv=([a-zA-Z0-9-/]+)"#', 6=>'#"(/)index.php\\?language=([a-z-]+)"#');
-$rewrite_values=array(0=>'"\\1index.php/\\2/seek/q=\\3"', 1=>'"\\1index.php/\\2/\\3/search/q=\\4"', 2=>'"\\1index.php/\\2/\\3/tag/\\4"', 3=>'"\\1index.php/\\2/\\3/\\4.html"', 4=>'"\\1index.php/\\2/\\3/\\4/"', 5=>'"\\1index.php/\\2/\\3/"', 6=>'"\\1index.php/\\2/"');
+$rewrite_values=array(0=>'"\\1\\2/seek/q=\\3"', 1=>'"\\1\\2/\\3/search/q=\\4"', 2=>'"\\1\\2/\\3/tag/\\4"', 3=>'"\\1\\2/\\3/\\4.html"', 4=>'"\\1\\2/\\3/\\4/"', 5=>'"\\1\\2/\\3/"', 6=>'"\\1\\2/"');
